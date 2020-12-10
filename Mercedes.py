@@ -16,12 +16,24 @@ class C63AMG(basicCarSpec):
     def __init__(self, seats, exhaust):
         self.seats = seats
         self.exhaust = exhaust
+    def get_seats(self):
+        return self.seats
+    def get_exhaust(self):
+        return self.exhaust
 class gWagon(basicCarSpec):
     def __init__(self, trim, top):
         self.trim = trim
         self.top = top
+    def get_trim(self):
+        return self.trim
+    def get_top(self):
+        return self.top
 class maybach(basicCarSpec):
     def __init__(self, wheelbase, use):
         self.wheelbase = wheelbase
         self.use = use
+    def get_wheelbase(self):
+        return self.wheelbase
+    def get_use(self):
+        return self.use
 #These 3 previous classes are for other mercedes models that can be instantiated.
