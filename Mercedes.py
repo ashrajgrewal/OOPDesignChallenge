@@ -1,5 +1,5 @@
 #OOP DESIGN CHALLENGE
-class BasicCarSpec:
+class basicCarSpec:
     def __init__(self, year, model, color):
         self.year = year
         self.model = model
@@ -11,9 +11,13 @@ class BasicCarSpec:
         return self.model
         return self.color
     #Now I am creating another class for a non standard benz, an AMG benz
-    #This inherits from the BasicCarSpec class because everuy car will have those things.
+    #This inherits from the basicCarSpec class because everuy car will have those things.
 class C63AMG(BasicCarSpec):
     def __init__(self, seats, exhaust):
         self.seats = seats
         self.exhaust = exhaust
 class gWagon:
+    def __init__(self, trim, top):
+        self.trim = trim
+        self.top = top
+class maybach:
