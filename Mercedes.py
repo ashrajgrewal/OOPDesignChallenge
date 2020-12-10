@@ -16,8 +16,12 @@ class C63AMG(BasicCarSpec):
     def __init__(self, seats, exhaust):
         self.seats = seats
         self.exhaust = exhaust
-class gWagon:
+class gWagon(BasicCarSpec):
     def __init__(self, trim, top):
         self.trim = trim
         self.top = top
-class maybach:
+class maybach(BasicCarSpec):
+    def __init__(self, wheelbase, use):
+        self.wheelbase = wheelbase
+        self.use = use
+    
