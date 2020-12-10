@@ -4,12 +4,8 @@ class basicCarSpec:
         self.year = year
         self.model = model
         self.color = color
- #Creating a public function to get the spec of the car object instantiated.
- #This is public so it can be used for any of the models.
-def get_spec(self):
-    return self.year
-    return self.model
-    return self.color
+    def get_spec(self):
+        print(f"{self.year} {self.model} {self.color}")
     #Now I am creating another class for a non standard benz, an AMG benz
     #This inherits from the basicCarSpec class because everuy car will have those things.
 class C63AMG(basicCarSpec):
@@ -37,3 +33,7 @@ class maybach(basicCarSpec):
     def get_use(self):
         return self.use
 #These 3 previous classes are for other mercedes models that can be instantiated.
+
+
+myCar = basicCarSpec(2020, "sedan", "white")
+myCar.get_spec()
