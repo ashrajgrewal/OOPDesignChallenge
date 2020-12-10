@@ -4,7 +4,8 @@ class basicCarSpec:
         self.year = year
         self.model = model
         self.color = color
- #Creating a public function to get the spec of the car object instantiated. This is public so it can be used for any of the models.
+ #Creating a public function to get the spec of the car object instantiated.
+ #This is public so it can be used for any of the models.
 def get_spec(self):
     return self.year
     return self.model
