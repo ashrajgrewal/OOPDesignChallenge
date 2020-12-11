@@ -9,31 +9,38 @@ class basicCarSpec:
     #Now I am creating another class for a non standard benz, an AMG benz
     #This inherits from the basicCarSpec class because everuy car will have those things.
 class C63AMG(basicCarSpec):
-    def __init__(self, seats, exhaust):
+    def __init__(self,  year, model, color, seats, exhaust):
+        super().__init__(year, model, color)
         self.seats = seats
         self.exhaust = exhaust
+    #Override original method to also print seats and exhaust.
+    def get_spec(self):
+        print(f"{self.year} {self.model} {self.color} {self.seats} {self.exhaust}")
     def get_seats(self):
-        return self.seats
+        print(self.seats)
     def get_exhaust(self):
-        return self.exhaust
+        print(self.exhaust)
 class gWagon(basicCarSpec):
-    def __init__(self, trim, top):
+    def __init__(self, year, model, color, trim, top):
         self.trim = trim
         self.top = top
     def get_trim(self):
-        return self.trim
+        print(self.trim)
     def get_top(self):
-        return self.top
+        print(self.top)
 class maybach(basicCarSpec):
-    def __init__(self, wheelbase, use):
+    def __init__(self, year, model, color, wheelbase, use):
         self.wheelbase = wheelbase
         self.use = use
     def get_wheelbase(self):
-        return self.wheelbase
+        print(self.wheelbase)
     def get_use(self):
-        return self.use
+        print(self.use)
 #These 3 previous classes are for other mercedes models that can be instantiated.
-
-
 myCar = basicCarSpec(2020, "sedan", "white")
 myCar.get_spec()
+
+myAMG = C63AMG(2020, "coupe", "black", "sport seats", "sport exhaust")
+myAMG.get_spec()
+myAMG.get_seats()
+myAMG.get_exhaust()
