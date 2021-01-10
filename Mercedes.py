@@ -42,7 +42,10 @@ class maybach(basicCarSpec):
 #myCar = basicCarSpec(2020, "sedan", "white")
 #myCar.get_spec()
 
-#myAMG = C63AMG(2020, "coupe", "black", "sport seats", "sport exhaust")
+myAMG = C63AMG(2020, "coupe", "black", "sport seats", "sport exhaust")
 #myAMG.get_spec()
 #myAMG.get_seats()
 #myAMG.get_exhaust()
+
+myAMG = C63AMG(2012, "sedan", "black", "comfort seats", "standard exhaust")
+myAMG.get_spec()
